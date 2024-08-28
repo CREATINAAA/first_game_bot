@@ -9,5 +9,5 @@ user_private_router = Router()
 
 @user_private_router.message(CommandStart())
 async def start(message: types.Message):
-    image_path = 'first_game_bot/static/141042.webp'
+    image_path = 'first_game_bot/static/images.jpg'
     await message.answer_photo(photo=FSInputFile(image_path), caption="Сыграем в игру?", reply_markup=get_start_keyboard())
